@@ -1,0 +1,4 @@
+zuliceBuild {
+  CODE_APP_CLARITY = 'QUA'
+  DEPLOY_FEATURE_BRANCH = true
+}

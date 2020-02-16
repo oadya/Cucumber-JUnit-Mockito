@@ -1,0 +1,9 @@
+fr\bpifrance\qua\qformation\dao\models\FormationEntity.class
+fr\bpifrance\qua\qformation\dao\models\StagiaireEntity.class
+fr\bpifrance\qua\qformation\dao\models\SujetEntity.class
+fr\bpifrance\qua\qformation\dao\repositories\SalleRepository.class
+fr\bpifrance\qua\qformation\dao\repositories\FormationRepository.class
+fr\bpifrance\qua\qformation\dao\models\SalleEntity.class
+fr\bpifrance\qua\qformation\dao\repositories\StagiaireRepository.class
+fr\bpifrance\qua\qformation\dao\repositories\SujetRepository.class
+fr\bpifrance\qua\qformation\dao\FormationRepositoryAdapter.class

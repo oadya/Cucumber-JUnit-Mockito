@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: fr.bpifrance.qua.qformation.api.test.ti.FormationTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 27.635 s <<< FAILURE! - in fr.bpifrance.qua.qformation.api.test.ti.FormationTest
+testObtenirFormation1(fr.bpifrance.qua.qformation.api.test.ti.FormationTest)  Time elapsed: 0.341 s  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<"CHM"> but was:<null>
+	at fr.bpifrance.qua.qformation.api.test.ti.FormationTest.testObtenirFormation1(FormationTest.java:88)
+

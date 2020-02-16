@@ -1,0 +1,28 @@
+[
+  {
+    "id": 1,
+    "code": "CSLM",
+    "libelle": "libellé test",
+    "date": "2019-01-25T00:00:00.000+0000",
+    "salle": "RDC1",
+    "formateur": "dsdds",
+    "statut": "Nouvelle",
+    "maximumInscrits": 5,
+    "nombreInscrits": 0,
+    "ouverte": true,
+    "stagiaires": [{"test":"ytes","test2":"ytes"}]
+  },
+  {
+    "id":2,
+    "code": "CSLM",
+    "libelle": "libellé test 2",
+    "date": "2019-01-25T00:00:00.000+0000",
+    "salle": "RDC1",
+    "formateur": "dsdds",
+    "statut": "Nouvelle",
+    "maximumInscrits": 10,
+    "nombreInscrits": 0,
+    "ouverte": true,
+    "stagiaires": []
+  }
+]

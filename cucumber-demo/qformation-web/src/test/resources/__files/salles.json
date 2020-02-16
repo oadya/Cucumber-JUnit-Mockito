@@ -1,0 +1,14 @@
+[
+  {
+    "salle": "RDC1",
+    "capacite": 10
+  },
+  {
+    "salle": "RDC2",
+    "capacite": 7
+  },
+  {
+    "salle": "RDC3",
+    "capacite": 8
+  }
+]

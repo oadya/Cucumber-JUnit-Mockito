@@ -1,0 +1,13 @@
+fr\bpifrance\qua\test\configuration\Browser$1.class
+fr\bpifrance\qua\test\configuration\Browser$BpiEdgeDriver.class
+fr\bpifrance\qua\test\configuration\Browser.class
+fr\bpifrance\qua\qformation\testihm\pageobjects\FormationPage.class
+fr\bpifrance\qua\qformation\testihm\definitions\FormationSteps.class
+fr\bpifrance\qua\qformation\testihm\runners\TestsFeatureIT.class
+fr\bpifrance\qua\qformation\testihm\pageobjects\MenuPage.class
+fr\bpifrance\qua\qformation\testihm\definitions\Hooks.class
+fr\bpifrance\qua\test\configuration\Browser$BpiChromeDriver.class
+fr\bpifrance\qua\test\configuration\Browser$BpiRemoteWebDriver.class
+fr\bpifrance\qua\test\configuration\Browser$BpiInternetExplorerDriver.class
+fr\bpifrance\qua\qformation\testihm\pageobjects\RessourcesPage.class
+fr\bpifrance\qua\test\configuration\AbstractSeleniumTest.class

@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: fr.bpifrance.qua.qformation.dao.test.tu.FormationTest
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 3.176 s - in fr.bpifrance.qua.qformation.dao.test.tu.FormationTest

@@ -1,0 +1,236 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<duplicate-finder-result version="1">
+    <project artifactId="qformation-test" groupId="fr.bpifrance.qua" version="0.0.1-develop-SNAPSHOT" type="jar"/>
+    <configuration skip="false" quiet="false" checkCompileClasspath="true" checkRuntimeClasspath="true" checkTestClasspath="true" failBuildInCaseOfDifferentContentConflict="false" failBuildInCaseOfEqualContentConflict="false" failBuildInCaseOfConflict="false" printEqualFiles="false" preferLocal="true" includeBootClasspath="false" bootClasspathProperty="sun.boot.class.path" includePomProjects="false" useDefaultResourceIgnoreList="true" useDefaultClassIgnoreList="true" useResultFile="true" resultFileMinClasspathCount="2" resultFile="C:\dev\workspace\qformation\qformation-test\target\duplicate-finder-result.xml">
+        <ignoredResourcePatterns>
+            <ignoredResourcePattern>.*index\.html$</ignoredResourcePattern>
+            <ignoredResourcePattern>.*\.txt$</ignoredResourcePattern>
+            <ignoredResourcePattern>.*\.log$</ignoredResourcePattern>
+            <ignoredResourcePattern>.*\.md$</ignoredResourcePattern>
+            <ignoredResourcePattern>.*\.properties$</ignoredResourcePattern>
+            <ignoredResourcePattern>.*\.xml$</ignoredResourcePattern>
+            <ignoredResourcePattern>.*\.wsdl$</ignoredResourcePattern>
+            <ignoredResourcePattern>.*\.xsd$</ignoredResourcePattern>
+            <ignoredResourcePattern>.*\.dtd$</ignoredResourcePattern>
+        </ignoredResourcePatterns>
+        <ignoredClassPatterns/>
+        <conflictingDependencies/>
+        <ignoredDependencies/>
+    </configuration>
+    <results>
+        <result name="compile" conflictState="no-conflict" failed="false">
+            <conflicts/>
+            <ignoredResourcePatterns>
+                <ignoredResourcePattern>^META-INF/.*</ignoredResourcePattern>
+                <ignoredResourcePattern>^OSGI-INF/.*</ignoredResourcePattern>
+                <ignoredResourcePattern>^licenses/.*</ignoredResourcePattern>
+                <ignoredResourcePattern>.*license(\.txt)?$</ignoredResourcePattern>
+                <ignoredResourcePattern>.*notice(\.txt)?$</ignoredResourcePattern>
+                <ignoredResourcePattern>.*readme(\.txt)?$</ignoredResourcePattern>
+                <ignoredResourcePattern>.*third-party(\.txt)?$</ignoredResourcePattern>
+                <ignoredResourcePattern>.*package\.html$</ignoredResourcePattern>
+                <ignoredResourcePattern>.*overview\.html$</ignoredResourcePattern>
+                <ignoredResourcePattern>.*index\.html$</ignoredResourcePattern>
+                <ignoredResourcePattern>.*\.txt$</ignoredResourcePattern>
+                <ignoredResourcePattern>.*\.log$</ignoredResourcePattern>
+                <ignoredResourcePattern>.*\.md$</ignoredResourcePattern>
+                <ignoredResourcePattern>.*\.properties$</ignoredResourcePattern>
+                <ignoredResourcePattern>.*\.xml$</ignoredResourcePattern>
+                <ignoredResourcePattern>.*\.wsdl$</ignoredResourcePattern>
+                <ignoredResourcePattern>.*\.xsd$</ignoredResourcePattern>
+                <ignoredResourcePattern>.*\.dtd$</ignoredResourcePattern>
+            </ignoredResourcePatterns>
+            <ignoredDirectoryPatterns>
+                <ignoredDirectoryPattern>^.git$</ignoredDirectoryPattern>
+                <ignoredDirectoryPattern>^.svn$</ignoredDirectoryPattern>
+                <ignoredDirectoryPattern>^.hg$</ignoredDirectoryPattern>
+                <ignoredDirectoryPattern>^.bzr$</ignoredDirectoryPattern>
+            </ignoredDirectoryPatterns>
+            <ignoredClassPatterns>
+                <ignoredClassPattern>.*\$.*</ignoredClassPattern>
+                <ignoredClassPattern>module-info</ignoredClassPattern>
+            </ignoredClassPatterns>
+            <classpathElements type="classes"/>
+            <classpathElements type="resources"/>
+        </result>
+        <result name="runtime" conflictState="no-conflict" failed="false">
+            <conflicts/>
+            <ignoredResourcePatterns>
+                <ignoredResourcePattern>^META-INF/.*</ignoredResourcePattern>
+                <ignoredResourcePattern>^OSGI-INF/.*</ignoredResourcePattern>
+                <ignoredResourcePattern>^licenses/.*</ignoredResourcePattern>
+                <ignoredResourcePattern>.*license(\.txt)?$</ignoredResourcePattern>
+                <ignoredResourcePattern>.*notice(\.txt)?$</ignoredResourcePattern>
+                <ignoredResourcePattern>.*readme(\.txt)?$</ignoredResourcePattern>
+                <ignoredResourcePattern>.*third-party(\.txt)?$</ignoredResourcePattern>
+                <ignoredResourcePattern>.*package\.html$</ignoredResourcePattern>
+                <ignoredResourcePattern>.*overview\.html$</ignoredResourcePattern>
+                <ignoredResourcePattern>.*index\.html$</ignoredResourcePattern>
+                <ignoredResourcePattern>.*\.txt$</ignoredResourcePattern>
+                <ignoredResourcePattern>.*\.log$</ignoredResourcePattern>
+                <ignoredResourcePattern>.*\.md$</ignoredResourcePattern>
+                <ignoredResourcePattern>.*\.properties$</ignoredResourcePattern>
+                <ignoredResourcePattern>.*\.xml$</ignoredResourcePattern>
+                <ignoredResourcePattern>.*\.wsdl$</ignoredResourcePattern>
+                <ignoredResourcePattern>.*\.xsd$</ignoredResourcePattern>
+                <ignoredResourcePattern>.*\.dtd$</ignoredResourcePattern>
+            </ignoredResourcePatterns>
+            <ignoredDirectoryPatterns>
+                <ignoredDirectoryPattern>^.git$</ignoredDirectoryPattern>
+                <ignoredDirectoryPattern>^.svn$</ignoredDirectoryPattern>
+                <ignoredDirectoryPattern>^.hg$</ignoredDirectoryPattern>
+                <ignoredDirectoryPattern>^.bzr$</ignoredDirectoryPattern>
+            </ignoredDirectoryPatterns>
+            <ignoredClassPatterns>
+                <ignoredClassPattern>.*\$.*</ignoredClassPattern>
+                <ignoredClassPattern>module-info</ignoredClassPattern>
+            </ignoredClassPatterns>
+            <classpathElements type="classes"/>
+            <classpathElements type="resources"/>
+        </result>
+        <result name="test" conflictState="content-different" failed="false">
+            <conflicts>
+                <conflict name="commons-logging:commons-logging:1.2, org.springframework:spring-jcl:5.0.6.RELEASE">
+                    <conflictResults>
+                        <conflictResult name="org.apache.commons.logging.Log" type="classes" excepted="false" failed="false" printed="true" conflictState="content-different">
+                            <conflictNames>
+                                <conflictName name="commons-logging:commons-logging:1.2" artifact="true" localFolder="false" bootClasspathElement="false">
+                                    <artifact artifactId="commons-logging" groupId="commons-logging" version="1.2" versionRange="1.2" type="jar"/>
+                                </conflictName>
+                                <conflictName name="org.springframework:spring-jcl:5.0.6.RELEASE" artifact="true" localFolder="false" bootClasspathElement="false">
+                                    <artifact artifactId="spring-jcl" groupId="org.springframework" version="5.0.6.RELEASE" versionRange="5.0.6.RELEASE" type="jar"/>
+                                </conflictName>
+                            </conflictNames>
+                        </conflictResult>
+                        <conflictResult name="org.apache.commons.logging.LogFactory" type="classes" excepted="false" failed="false" printed="true" conflictState="content-different">
+                            <conflictNames>
+                                <conflictName name="commons-logging:commons-logging:1.2" artifact="true" localFolder="false" bootClasspathElement="false">
+                                    <artifact artifactId="commons-logging" groupId="commons-logging" version="1.2" versionRange="1.2" type="jar"/>
+                                </conflictName>
+                                <conflictName name="org.springframework:spring-jcl:5.0.6.RELEASE" artifact="true" localFolder="false" bootClasspathElement="false">
+                                    <artifact artifactId="spring-jcl" groupId="org.springframework" version="5.0.6.RELEASE" versionRange="5.0.6.RELEASE" type="jar"/>
+                                </conflictName>
+                            </conflictNames>
+                        </conflictResult>
+                        <conflictResult name="org.apache.commons.logging.impl.NoOpLog" type="classes" excepted="false" failed="false" printed="true" conflictState="content-different">
+                            <conflictNames>
+                                <conflictName name="commons-logging:commons-logging:1.2" artifact="true" localFolder="false" bootClasspathElement="false">
+                                    <artifact artifactId="commons-logging" groupId="commons-logging" version="1.2" versionRange="1.2" type="jar"/>
+                                </conflictName>
+                                <conflictName name="org.springframework:spring-jcl:5.0.6.RELEASE" artifact="true" localFolder="false" bootClasspathElement="false">
+                                    <artifact artifactId="spring-jcl" groupId="org.springframework" version="5.0.6.RELEASE" versionRange="5.0.6.RELEASE" type="jar"/>
+                                </conflictName>
+                            </conflictNames>
+                        </conflictResult>
+                        <conflictResult name="org.apache.commons.logging.impl.SimpleLog" type="classes" excepted="false" failed="false" printed="true" conflictState="content-different">
+                            <conflictNames>
+                                <conflictName name="commons-logging:commons-logging:1.2" artifact="true" localFolder="false" bootClasspathElement="false">
+                                    <artifact artifactId="commons-logging" groupId="commons-logging" version="1.2" versionRange="1.2" type="jar"/>
+                                </conflictName>
+                                <conflictName name="org.springframework:spring-jcl:5.0.6.RELEASE" artifact="true" localFolder="false" bootClasspathElement="false">
+                                    <artifact artifactId="spring-jcl" groupId="org.springframework" version="5.0.6.RELEASE" versionRange="5.0.6.RELEASE" type="jar"/>
+                                </conflictName>
+                            </conflictNames>
+                        </conflictResult>
+                    </conflictResults>
+                </conflict>
+                <conflict name="org.seleniumhq.selenium:selenium-api:3.9.1, org.seleniumhq.selenium:selenium-chrome-driver:3.9.1, org.seleniumhq.selenium:selenium-edge-driver:3.9.1, org.seleniumhq.selenium:selenium-firefox-driver:3.9.1, org.seleniumhq.selenium:selenium-ie-driver:3.9.1, org.seleniumhq.selenium:selenium-opera-driver:3.9.1, org.seleniumhq.selenium:selenium-remote-driver:3.9.1, org.seleniumhq.selenium:selenium-safari-driver:3.9.1, org.seleniumhq.selenium:selenium-support:3.9.1">
+                    <conflictResults>
+                        <conflictResult name="META-INF" type="resources" excepted="false" failed="false" printed="false" conflictState="content-equal">
+                            <conflictNames>
+                                <conflictName name="org.seleniumhq.selenium:selenium-api:3.9.1" artifact="true" localFolder="false" bootClasspathElement="false">
+                                    <artifact artifactId="selenium-api" groupId="org.seleniumhq.selenium" version="3.9.1" versionRange="3.9.1" type="jar"/>
+                                </conflictName>
+                                <conflictName name="org.seleniumhq.selenium:selenium-chrome-driver:3.9.1" artifact="true" localFolder="false" bootClasspathElement="false">
+                                    <artifact artifactId="selenium-chrome-driver" groupId="org.seleniumhq.selenium" version="3.9.1" versionRange="3.9.1" type="jar"/>
+                                </conflictName>
+                                <conflictName name="org.seleniumhq.selenium:selenium-edge-driver:3.9.1" artifact="true" localFolder="false" bootClasspathElement="false">
+                                    <artifact artifactId="selenium-edge-driver" groupId="org.seleniumhq.selenium" version="3.9.1" versionRange="3.9.1" type="jar"/>
+                                </conflictName>
+                                <conflictName name="org.seleniumhq.selenium:selenium-firefox-driver:3.9.1" artifact="true" localFolder="false" bootClasspathElement="false">
+                                    <artifact artifactId="selenium-firefox-driver" groupId="org.seleniumhq.selenium" version="3.9.1" versionRange="3.9.1" type="jar"/>
+                                </conflictName>
+                                <conflictName name="org.seleniumhq.selenium:selenium-ie-driver:3.9.1" artifact="true" localFolder="false" bootClasspathElement="false">
+                                    <artifact artifactId="selenium-ie-driver" groupId="org.seleniumhq.selenium" version="3.9.1" versionRange="3.9.1" type="jar"/>
+                                </conflictName>
+                                <conflictName name="org.seleniumhq.selenium:selenium-opera-driver:3.9.1" artifact="true" localFolder="false" bootClasspathElement="false">
+                                    <artifact artifactId="selenium-opera-driver" groupId="org.seleniumhq.selenium" version="3.9.1" versionRange="3.9.1" type="jar"/>
+                                </conflictName>
+                                <conflictName name="org.seleniumhq.selenium:selenium-remote-driver:3.9.1" artifact="true" localFolder="false" bootClasspathElement="false">
+                                    <artifact artifactId="selenium-remote-driver" groupId="org.seleniumhq.selenium" version="3.9.1" versionRange="3.9.1" type="jar"/>
+                                </conflictName>
+                                <conflictName name="org.seleniumhq.selenium:selenium-safari-driver:3.9.1" artifact="true" localFolder="false" bootClasspathElement="false">
+                                    <artifact artifactId="selenium-safari-driver" groupId="org.seleniumhq.selenium" version="3.9.1" versionRange="3.9.1" type="jar"/>
+                                </conflictName>
+                                <conflictName name="org.seleniumhq.selenium:selenium-support:3.9.1" artifact="true" localFolder="false" bootClasspathElement="false">
+                                    <artifact artifactId="selenium-support" groupId="org.seleniumhq.selenium" version="3.9.1" versionRange="3.9.1" type="jar"/>
+                                </conflictName>
+                            </conflictNames>
+                        </conflictResult>
+                    </conflictResults>
+                </conflict>
+            </conflicts>
+            <ignoredResourcePatterns>
+                <ignoredResourcePattern>^META-INF/.*</ignoredResourcePattern>
+                <ignoredResourcePattern>^OSGI-INF/.*</ignoredResourcePattern>
+                <ignoredResourcePattern>^licenses/.*</ignoredResourcePattern>
+                <ignoredResourcePattern>.*license(\.txt)?$</ignoredResourcePattern>
+                <ignoredResourcePattern>.*notice(\.txt)?$</ignoredResourcePattern>
+                <ignoredResourcePattern>.*readme(\.txt)?$</ignoredResourcePattern>
+                <ignoredResourcePattern>.*third-party(\.txt)?$</ignoredResourcePattern>
+                <ignoredResourcePattern>.*package\.html$</ignoredResourcePattern>
+                <ignoredResourcePattern>.*overview\.html$</ignoredResourcePattern>
+                <ignoredResourcePattern>.*index\.html$</ignoredResourcePattern>
+                <ignoredResourcePattern>.*\.txt$</ignoredResourcePattern>
+                <ignoredResourcePattern>.*\.log$</ignoredResourcePattern>
+                <ignoredResourcePattern>.*\.md$</ignoredResourcePattern>
+                <ignoredResourcePattern>.*\.properties$</ignoredResourcePattern>
+                <ignoredResourcePattern>.*\.xml$</ignoredResourcePattern>
+                <ignoredResourcePattern>.*\.wsdl$</ignoredResourcePattern>
+                <ignoredResourcePattern>.*\.xsd$</ignoredResourcePattern>
+                <ignoredResourcePattern>.*\.dtd$</ignoredResourcePattern>
+            </ignoredResourcePatterns>
+            <ignoredDirectoryPatterns>
+                <ignoredDirectoryPattern>^.git$</ignoredDirectoryPattern>
+                <ignoredDirectoryPattern>^.svn$</ignoredDirectoryPattern>
+                <ignoredDirectoryPattern>^.hg$</ignoredDirectoryPattern>
+                <ignoredDirectoryPattern>^.bzr$</ignoredDirectoryPattern>
+            </ignoredDirectoryPatterns>
+            <ignoredClassPatterns>
+                <ignoredClassPattern>.*\$.*</ignoredClassPattern>
+                <ignoredClassPattern>module-info</ignoredClassPattern>
+            </ignoredClassPatterns>
+            <classpathElements type="classes">
+                <classpathElement name="org.apache.commons.logging.Log">
+                    <file>C:\dev\repository\org\springframework\spring-jcl\5.0.6.RELEASE\spring-jcl-5.0.6.RELEASE.jar</file>
+                    <file>C:\dev\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar</file>
+                </classpathElement>
+                <classpathElement name="org.apache.commons.logging.LogFactory">
+                    <file>C:\dev\repository\org\springframework\spring-jcl\5.0.6.RELEASE\spring-jcl-5.0.6.RELEASE.jar</file>
+                    <file>C:\dev\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar</file>
+                </classpathElement>
+                <classpathElement name="org.apache.commons.logging.impl.NoOpLog">
+                    <file>C:\dev\repository\org\springframework\spring-jcl\5.0.6.RELEASE\spring-jcl-5.0.6.RELEASE.jar</file>
+                    <file>C:\dev\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar</file>
+                </classpathElement>
+                <classpathElement name="org.apache.commons.logging.impl.SimpleLog">
+                    <file>C:\dev\repository\org\springframework\spring-jcl\5.0.6.RELEASE\spring-jcl-5.0.6.RELEASE.jar</file>
+                    <file>C:\dev\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar</file>
+                </classpathElement>
+            </classpathElements>
+            <classpathElements type="resources">
+                <classpathElement name="META-INF">
+                    <file>C:\dev\repository\org\seleniumhq\selenium\selenium-api\3.9.1\selenium-api-3.9.1.jar</file>
+                    <file>C:\dev\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.9.1\selenium-chrome-driver-3.9.1.jar</file>
+                    <file>C:\dev\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.9.1\selenium-firefox-driver-3.9.1.jar</file>
+                    <file>C:\dev\repository\org\seleniumhq\selenium\selenium-ie-driver\3.9.1\selenium-ie-driver-3.9.1.jar</file>
+                    <file>C:\dev\repository\org\seleniumhq\selenium\selenium-safari-driver\3.9.1\selenium-safari-driver-3.9.1.jar</file>
+                    <file>C:\dev\repository\org\seleniumhq\selenium\selenium-opera-driver\3.9.1\selenium-opera-driver-3.9.1.jar</file>
+                    <file>C:\dev\repository\org\seleniumhq\selenium\selenium-remote-driver\3.9.1\selenium-remote-driver-3.9.1.jar</file>
+                    <file>C:\dev\repository\org\seleniumhq\selenium\selenium-support\3.9.1\selenium-support-3.9.1.jar</file>
+                    <file>C:\dev\repository\org\seleniumhq\selenium\selenium-edge-driver\3.9.1\selenium-edge-driver-3.9.1.jar</file>
+                </classpathElement>
+            </classpathElements>
+        </result>
+    </results>
+</duplicate-finder-result>

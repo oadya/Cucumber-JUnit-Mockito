@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>  
+  
+   <!-- Base Definition -->
+   <definition name="base-definition"
+       template="/ui/tiles/layouts/default.jsp">  
+       <put-attribute name="title" value="" />  
+       <put-attribute name="header" value="/ui/tiles/templates/header.jsp" />  
+       <put-attribute name="navigation" value="/ui/tiles/templates/navigation.jsp" />  
+       <put-attribute name="menu" value="" />  
+       <put-attribute name="body" value="" />  
+       <put-attribute name="footer" value="/ui/tiles/templates/footer.jsp" />  
+   </definition>  
+  
+   <!-- Accueil Page -->
+   <definition name="index" extends="base-definition">  
+       <put-attribute name="title" value="Accueil du site de la formation" />  
+       <put-attribute name="body" value="/pages/index.jsp" />  
+   </definition>  
+ 
+    <!-- Formations Page -->
+   <definition name="formations-index" extends="base-definition">  
+       <put-attribute name="title" value="Formations" />
+       <put-attribute name="menu" value="/pages/formations/menu.jsp" />    
+       <put-attribute name="body" value="/pages/formations/index.jsp" />  
+   </definition>
+
+   <definition name="formations-liste" extends="base-definition">  
+       <put-attribute name="title" value="Listes des formations" />
+       <put-attribute name="menu" value="/pages/formations/menu.jsp" />    
+       <put-attribute name="body" value="/pages/formations/liste.jsp" />  
+   </definition>
+   
+   <definition name="formations-ajout" extends="base-definition">  
+       <put-attribute name="title" value="Planifier une formation" />
+       <put-attribute name="menu" value="/pages/formations/menu.jsp" />    
+       <put-attribute name="body" value="/pages/formations/ajout.jsp" />  
+   </definition>
+   
+   <definition name="formations-modification" extends="base-definition">  
+       <put-attribute name="title" value="Gérer la formation" />
+       <put-attribute name="menu" value="/pages/formations/menu.jsp" />    
+       <put-attribute name="body" value="/pages/formations/modification.jsp" />  
+   </definition>
+ 
+    <definition name="formations-erreur" extends="base-definition">  
+       <put-attribute name="title" value="Gérer la formation" />
+       <put-attribute name="menu" value="/pages/formations/menu.jsp" />    
+       <put-attribute name="body" value="/pages/formations/erreur.jsp" />  
+   </definition>
+   
+         <!-- Ressoures Page -->
+   <definition name="ressources" extends="base-definition">  
+       <put-attribute name="title" value="Gestion des ressources" />
+       <put-attribute name="menu" value="/pages/ressources/menu.jsp" />    
+       <put-attribute name="body" value="/pages/ressources/index.jsp" />  
+   </definition>
+    
+       <!-- Sujets Page -->
+   <definition name="sujets" extends="base-definition">  
+       <put-attribute name="title" value="Sujets" />
+       <put-attribute name="menu" value="/pages/ressources/menu.jsp" />    
+       <put-attribute name="body" value="/pages/ressources/sujets.jsp" />  
+   </definition>
+          <!-- Salles Page -->
+   <definition name="salles" extends="base-definition">  
+       <put-attribute name="title" value="Salles" />
+       <put-attribute name="menu" value="/pages/ressources/menu.jsp" />    
+       <put-attribute name="body" value="/pages/ressources/salles.jsp" />  
+   </definition>
+   <!-- 
+   <definition name="transporteurs" extends="base-definition">  
+       <put-attribute name="title" value="Transporteurs" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/transporteurs/index.jsp" />  
+       <put-attribute name="menu" value="/WEB-INF/views/pages/transporteurs/menu.jsp" /> 
+   </definition>  
+
+   <definition name="transporteurs-liste" extends="base-definition">  
+       <put-attribute name="title" value="Transporteurs-Liste" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/transporteurs/liste.jsp" />  
+       <put-attribute name="menu" value="/WEB-INF/views/pages/transporteurs/menu.jsp" /> 
+   </definition>  
+  
+     <definition name="transporteur-create" extends="base-definition">  
+       <put-attribute name="title" value="Transporteurs-Ajouter un transporteur" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/transporteurs/create.jsp" />  
+       <put-attribute name="menu" value="/WEB-INF/views/pages/transporteurs/menu.jsp" /> 
+   </definition>  
+   
+    <definition name="transporteur-update" extends="base-definition">  
+       <put-attribute name="title" value="Transporteurs-Ajouter un transporteur" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/transporteurs/update.jsp" />  
+       <put-attribute name="menu" value="/WEB-INF/views/pages/transporteurs/menu.jsp" /> 
+   </definition>
+   
+
+    <definition name="camions-index" extends="base-definition">  
+       <put-attribute name="title" value="Camions" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/camions/index.jsp" />  
+       <put-attribute name="menu" value="/WEB-INF/views/pages/camions/menu.jsp" /> 
+   </definition>
+  
+      <definition name="camion-create" extends="base-definition">  
+       <put-attribute name="title" value="Trasporteurs - Ajouter un camion " />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/camions/create.jsp" />  
+       <put-attribute name="menu" value="/WEB-INF/views/pages/camions/menu.jsp" /> 
+   </definition>  
+       
+    <definition name="camions-liste" extends="base-definition">  
+       <put-attribute name="title" value="Camions-Liste" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/camions/liste.jsp" />  
+       <put-attribute name="menu" value="/WEB-INF/views/pages/camions/menu.jsp" /> 
+   </definition> 
+   
+    <definition name="camion-update" extends="base-definition">  
+       <put-attribute name="title" value="Camions-Modifier un camion" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/camions/update.jsp" />  
+       <put-attribute name="menu" value="/WEB-INF/views/pages/camions/menu.jsp" /> 
+   </definition> 
+   
+      -->
+  
+</tiles-definitions>

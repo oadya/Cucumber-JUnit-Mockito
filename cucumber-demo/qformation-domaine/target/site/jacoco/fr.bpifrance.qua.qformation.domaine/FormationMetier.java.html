@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="fr"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>FormationMetier.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">qformation-domaine</a> &gt; <a href="index.source.html" class="el_package">fr.bpifrance.qua.qformation.domaine</a> &gt; <span class="el_source">FormationMetier.java</span></div><h1>FormationMetier.java</h1><pre class="source lang-java linenums">package fr.bpifrance.qua.qformation.domaine;
+
+import fr.bpifrance.qua.qformation.domaine.exception.FormationFermeeException;
+import org.springframework.stereotype.Service;
+
+import java.util.List;
+
+
+@Service
+public class FormationMetier implements IFormationMetier {
+
+	private FormationRepositoryPort formationRepositoryPort;
+<span class="fc" id="L13">	public FormationMetier(FormationRepositoryPort formationRepositoryPort ){</span>
+<span class="fc" id="L14">		this.formationRepositoryPort = formationRepositoryPort;</span>
+<span class="fc" id="L15">	}</span>
+
+	public Formation planifierFormation(Formation pFormation) {
+		//RG: Le sujet de la formation doit exister dans la base
+<span class="fc bfc" id="L19" title="All 2 branches covered.">		if(this.obtenirSujet(pFormation.getCode()) != null) {</span>
+<span class="fc bfc" id="L20" title="All 2 branches covered.">			if(formationRepositoryPort.isSalleDisponible(pFormation.getSalle(),pFormation.getDate())) { 		//RG: disponibilité de la salle</span>
+<span class="fc" id="L21">				pFormation.setStatut(&quot;Nouvelle&quot;); //RG: Le statut est Nouvelle</span>
+<span class="fc" id="L22">				formationRepositoryPort.planifierFormation(pFormation);</span>
+<span class="fc" id="L23">				return pFormation;</span>
+			}else{
+<span class="fc" id="L25">				System.out.println(&quot;La salle n'est pas disponible&quot;);</span>
+<span class="fc" id="L26">				return null;</span>
+			}
+		}else{
+<span class="fc" id="L29">			System.out.println(&quot;Le code du sujet n'existe pas&quot;);</span>
+<span class="fc" id="L30">			return null;</span>
+		}
+
+	}
+
+	public List&lt;Formation&gt; obtenirFormations() {
+<span class="nc" id="L36">		return formationRepositoryPort.obtenirFormations();</span>
+	}
+
+	public Formation consulterFormation(long pIdFormation) {
+<span class="nc" id="L40">		Formation lFormation = formationRepositoryPort.obtenirFormation(pIdFormation);</span>
+<span class="nc" id="L41">		lFormation.setStagiaires(formationRepositoryPort.obtenirStagiairesFormation(pIdFormation));</span>
+<span class="nc" id="L42">		return lFormation;</span>
+	}
+
+	public void annulerFormation(long pIdFormation) {
+<span class="nc" id="L46">		formationRepositoryPort.supprimerFormation(pIdFormation);</span>
+<span class="nc" id="L47">	}</span>
+
+	public void annulerFormation(String pCode) {
+<span class="nc" id="L50">		formationRepositoryPort.supprimerFormation(pCode);</span>
+<span class="nc" id="L51">	}</span>
+
+	public Formation inscrireFormation(long pIdFormation, Collaborateur pCollaborateur) throws FormationFermeeException {
+<span class="nc" id="L54">		Formation pFormation = formationRepositoryPort.obtenirFormation(pIdFormation);</span>
+<span class="nc bnc" id="L55" title="All 2 branches missed.">		if(pFormation.getNombreInscrits() &lt; pFormation.getMaximumInscrits()) {</span>
+<span class="nc" id="L56">			Stagiaire lStagiaire = new Stagiaire();</span>
+<span class="nc" id="L57">			lStagiaire.setMatricule(pCollaborateur.getMatricule());</span>
+<span class="nc" id="L58">			lStagiaire.setNom(pCollaborateur.getNom());</span>
+<span class="nc" id="L59">			lStagiaire.setIdFormation(pFormation.getId());</span>
+<span class="nc" id="L60">			formationRepositoryPort.inscrireStagiaire(lStagiaire);</span>
+<span class="nc" id="L61">			pFormation.setNombreInscrits(pFormation.getNombreInscrits() + 1);</span>
+<span class="nc bnc" id="L62" title="All 2 branches missed.">			if(pFormation.getNombreInscrits() == pFormation.getMaximumInscrits()) {</span>
+<span class="nc" id="L63">				pFormation.setOuverte(false);</span>
+			}
+<span class="nc" id="L65">			formationRepositoryPort.modifierFormation(pFormation);</span>
+<span class="nc" id="L66">			return pFormation;</span>
+		}else {
+<span class="nc" id="L68">			throw new FormationFermeeException(&quot;inscription fermée&quot;,300);}</span>
+	}
+
+	public List&lt;Stagiaire&gt; obtenirStagiairesFormation(long pIdFormation) {
+<span class="nc" id="L72">		return formationRepositoryPort.obtenirStagiairesFormation(pIdFormation);</span>
+	}
+
+	public void desinscrireFormation(long pIdFormation, String matricule) {
+<span class="nc" id="L76">		formationRepositoryPort.retirerStagiaire(pIdFormation, matricule);</span>
+<span class="nc" id="L77">		Formation lFormation = formationRepositoryPort.obtenirFormation(pIdFormation);</span>
+<span class="nc" id="L78">		lFormation.setNombreInscrits(lFormation.getNombreInscrits() - 1);</span>
+<span class="nc bnc" id="L79" title="All 2 branches missed.">		if(lFormation.getNombreInscrits() &lt; lFormation.getMaximumInscrits()) {</span>
+<span class="nc" id="L80">			lFormation.setOuverte(true);</span>
+		}
+<span class="nc" id="L82">		formationRepositoryPort.modifierFormation(lFormation);</span>
+<span class="nc" id="L83">	}</span>
+
+	public void modifierFormation(Formation pFormation) {
+<span class="nc" id="L86">		formationRepositoryPort.modifierFormation(pFormation);</span>
+<span class="nc" id="L87">	}</span>
+
+	public Sujet ajouterSujet(Sujet pSujet) throws Exception {
+<span class="fc bfc" id="L90" title="All 2 branches covered.">		if(formationRepositoryPort.obtenirSujet(pSujet.getCode()) == null) {</span>
+<span class="fc" id="L91">			return formationRepositoryPort.ajouterSujet(pSujet);</span>
+		}else{
+<span class="fc" id="L93">			throw new Exception(&quot;Le sujet existe déjà&quot;);</span>
+		}
+	}
+
+	public List&lt;Sujet&gt; obtenirSujets() {
+<span class="nc" id="L98">		return formationRepositoryPort.obtenirSujets();</span>
+	}
+
+	public Salle ajouterSalle(Salle pSalle) {
+<span class="nc" id="L102">		return formationRepositoryPort.ajouterSalle(pSalle);</span>
+	}
+
+
+	public List&lt;Salle&gt; obtenirSalles() {
+<span class="nc" id="L107">		return formationRepositoryPort.obtenirSalles();</span>
+	}
+
+	public Salle obtenirSalle(String nomSalle) {
+<span class="nc" id="L111">		return formationRepositoryPort.obtenirSalle(nomSalle);</span>
+	}
+
+	@Override
+	public Sujet obtenirSujet(String code) {
+<span class="fc" id="L116">		return formationRepositoryPort.obtenirSujet(code);</span>
+	}
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.2.201808211720</span></div></body></html>

@@ -1,0 +1,8 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+qformation-domaine,fr.bpifrance.qua.qformation.domaine.exception,FormationFermeeException,15,0,0,0,6,0,3,0,3,0
+qformation-domaine,fr.bpifrance.qua.qformation.domaine,Sujet,155,40,33,5,3,2,27,5,8,5
+qformation-domaine,fr.bpifrance.qua.qformation.domaine,Formation,430,37,72,0,13,12,52,12,16,12
+qformation-domaine,fr.bpifrance.qua.qformation.domaine,Salle,115,0,22,0,4,0,20,0,9,0
+qformation-domaine,fr.bpifrance.qua.qformation.domaine,Stagiaire,66,0,8,0,2,0,11,0,7,0
+qformation-domaine,fr.bpifrance.qua.qformation.domaine,FormationMetier,140,60,6,6,35,16,15,7,12,4
+qformation-domaine,fr.bpifrance.qua.qformation.domaine,Collaborateur,115,0,22,0,3,0,20,0,9,0

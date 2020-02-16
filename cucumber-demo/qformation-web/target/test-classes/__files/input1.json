@@ -1,0 +1,15 @@
+[
+  {
+    "id": 1,
+    "code": "CSLM",
+    "libelle": "libellé test",
+    "date": "2019-01-25T00:00:00.000+0000",
+    "salle": "RDC1",
+    "formateur": "Claude MARGUERITE",
+    "statut": "Nouvelle",
+    "maximumInscrits": 5,
+    "nombreInscrits": 0,
+    "ouverte": true,
+    "stagiaires": []
+  }
+]

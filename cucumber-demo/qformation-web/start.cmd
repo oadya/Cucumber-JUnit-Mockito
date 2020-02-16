@@ -1,0 +1,1 @@
+mvn exec:exec -Dexec.executable="C:/dev/ztoolbox/jdk-10.0.2/bin/java.exe" -Dexec.args="-jar target/${project.artifactId}-${project.version}.jar"

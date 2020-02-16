@@ -1,0 +1,1 @@
+ insert into formation (code, date, formateur, libelle, maximum_inscrits, nombre_inscrits, ouverte, salle, statut) values ('CSLM', '2018-10-01T00:00:00', 'CHM', 'Cucumber', 10, 0, true, 'RDC', 'nouvelle');

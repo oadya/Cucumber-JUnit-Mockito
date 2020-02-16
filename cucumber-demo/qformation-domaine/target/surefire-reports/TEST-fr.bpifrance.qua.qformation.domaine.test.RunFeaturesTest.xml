@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="fr.bpifrance.qua.qformation.domaine.test.RunFeaturesTest" time="8.412" tests="5" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.specification.version" value="10"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\dev\workspace\qformation\qformation-domaine\target\test-classes;C:\dev\workspace\qformation\qformation-domaine\target\classes;C:\dev\repository\org\springframework\spring-core\5.0.6.RELEASE\spring-core-5.0.6.RELEASE.jar;C:\dev\repository\org\springframework\spring-jcl\5.0.6.RELEASE\spring-jcl-5.0.6.RELEASE.jar;C:\dev\repository\org\springframework\spring-context\5.0.6.RELEASE\spring-context-5.0.6.RELEASE.jar;C:\dev\repository\org\springframework\spring-aop\5.0.6.RELEASE\spring-aop-5.0.6.RELEASE.jar;C:\dev\repository\org\springframework\spring-beans\5.0.6.RELEASE\spring-beans-5.0.6.RELEASE.jar;C:\dev\repository\org\springframework\spring-expression\5.0.6.RELEASE\spring-expression-5.0.6.RELEASE.jar;C:\dev\repository\org\assertj\assertj-core\3.9.1\assertj-core-3.9.1.jar;C:\dev\repository\org\projectlombok\lombok\1.18.2\lombok-1.18.2.jar;C:\dev\repository\io\cucumber\cucumber-junit\2.3.1\cucumber-junit-2.3.1.jar;C:\dev\repository\io\cucumber\cucumber-core\2.3.1\cucumber-core-2.3.1.jar;C:\dev\repository\info\cukes\cucumber-html\0.2.6\cucumber-html-0.2.6.jar;C:\dev\repository\io\cucumber\cucumber-jvm-deps\1.0.6\cucumber-jvm-deps-1.0.6.jar;C:\dev\repository\io\cucumber\gherkin\5.0.0\gherkin-5.0.0.jar;C:\dev\repository\io\cucumber\tag-expressions\1.1.1\tag-expressions-1.1.1.jar;C:\dev\repository\io\cucumber\cucumber-spring\2.3.1\cucumber-spring-2.3.1.jar;C:\dev\repository\io\cucumber\cucumber-java\2.3.1\cucumber-java-2.3.1.jar;C:\dev\repository\org\springframework\spring-test\5.0.6.RELEASE\spring-test-5.0.6.RELEASE.jar;C:\dev\repository\junit\junit\4.12\junit-4.12.jar;C:\dev\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\dev\repository\org\mockito\mockito-core\2.25.0\mockito-core-2.25.0.jar;C:\dev\repository\net\bytebuddy\byte-buddy\1.9.7\byte-buddy-1.9.7.jar;C:\dev\repository\net\bytebuddy\byte-buddy-agent\1.9.7\byte-buddy-agent-1.9.7.jar;C:\dev\repository\org\objenesis\objenesis\2.6\objenesis-2.6.jar;"/>
+    <property name="java.vm.vendor" value="&quot;Oracle Corporation&quot;"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="user.timezone" value=""/>
+    <property name="java.vm.specification.version" value="10"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="FR"/>
+    <property name="sun.boot.library.path" value="C:\dev\ztoolbox\jdk-10.0.2\bin"/>
+    <property name="sun.java.command" value="C:\Users\m10657\AppData\Local\Temp\5\surefire12003292309040935872\surefirebooter3181843822432636990.jar C:\Users\m10657\AppData\Local\Temp\5\surefire12003292309040935872 2019-04-17T17-45-51_049-jvmRun1 surefire15056721445619399671tmp surefire_0631706792703343225tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\dev\workspace\qformation\qformation-domaine\target\test-classes;C:\dev\workspace\qformation\qformation-domaine\target\classes;C:\dev\repository\org\springframework\spring-core\5.0.6.RELEASE\spring-core-5.0.6.RELEASE.jar;C:\dev\repository\org\springframework\spring-jcl\5.0.6.RELEASE\spring-jcl-5.0.6.RELEASE.jar;C:\dev\repository\org\springframework\spring-context\5.0.6.RELEASE\spring-context-5.0.6.RELEASE.jar;C:\dev\repository\org\springframework\spring-aop\5.0.6.RELEASE\spring-aop-5.0.6.RELEASE.jar;C:\dev\repository\org\springframework\spring-beans\5.0.6.RELEASE\spring-beans-5.0.6.RELEASE.jar;C:\dev\repository\org\springframework\spring-expression\5.0.6.RELEASE\spring-expression-5.0.6.RELEASE.jar;C:\dev\repository\org\assertj\assertj-core\3.9.1\assertj-core-3.9.1.jar;C:\dev\repository\org\projectlombok\lombok\1.18.2\lombok-1.18.2.jar;C:\dev\repository\io\cucumber\cucumber-junit\2.3.1\cucumber-junit-2.3.1.jar;C:\dev\repository\io\cucumber\cucumber-core\2.3.1\cucumber-core-2.3.1.jar;C:\dev\repository\info\cukes\cucumber-html\0.2.6\cucumber-html-0.2.6.jar;C:\dev\repository\io\cucumber\cucumber-jvm-deps\1.0.6\cucumber-jvm-deps-1.0.6.jar;C:\dev\repository\io\cucumber\gherkin\5.0.0\gherkin-5.0.0.jar;C:\dev\repository\io\cucumber\tag-expressions\1.1.1\tag-expressions-1.1.1.jar;C:\dev\repository\io\cucumber\cucumber-spring\2.3.1\cucumber-spring-2.3.1.jar;C:\dev\repository\io\cucumber\cucumber-java\2.3.1\cucumber-java-2.3.1.jar;C:\dev\repository\org\springframework\spring-test\5.0.6.RELEASE\spring-test-5.0.6.RELEASE.jar;C:\dev\repository\junit\junit\4.12\junit-4.12.jar;C:\dev\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\dev\repository\org\mockito\mockito-core\2.25.0\mockito-core-2.25.0.jar;C:\dev\repository\net\bytebuddy\byte-buddy\1.9.7\byte-buddy-1.9.7.jar;C:\dev\repository\net\bytebuddy\byte-buddy-agent\1.9.7\byte-buddy-agent-1.9.7.jar;C:\dev\repository\org\objenesis\objenesis\2.6\objenesis-2.6.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\m10657"/>
+    <property name="user.language" value="fr"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2018-07-17"/>
+    <property name="java.home" value="C:\dev\ztoolbox\jdk-10.0.2"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\dev\workspace\qformation\qformation-domaine"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="C:\Users\m10657\AppData\Local\Temp\5\surefire12003292309040935872\surefirebooter3181843822432636990.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="10.0.2+13"/>
+    <property name="user.name" value="M10657"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="18.3"/>
+    <property name="localRepository" value="C:\dev\repository"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\m10657\AppData\Local\Temp\5\"/>
+    <property name="java.version" value="10.0.2"/>
+    <property name="user.dir" value="C:\dev\workspace\qformation\qformation-domaine"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="C:\dev\ztoolbox\jdk-10.0.2\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\dev\ztoolbox\cmder\bin;C:\dev\ztoolbox\cmder\vendor\conemu-maximus5\ConEmu\Scripts;C:\dev\ztoolbox\cmder\vendor\conemu-maximus5;C:\dev\ztoolbox\cmder\vendor\conemu-maximus5\ConEmu;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\ooRexx;C:\Reseau\Utils;U:\Natsys;C:\dev\ztoolbox\jdk-10.0.2\bin;C:\dev\ztoolbox\maven_352\bin;C:\dev\ztoolbox\cmder\vendor\git-for-windows\cmd;C:\dev\ztoolbox\node_v8_6_0;C:\dev\ztoolbox\oc;C:\dev\ztoolbox\putty;C:\dev\ztoolbox\winmerge;C:\dev\ztoolbox\wlp\bin;C:\dev\npm-packages;C:\dev\ztoolbox\selenium;C:\dev\ztoolbox\cmder\vendor\git-for-windows\usr\bin;C:\dev\ztoolbox\cmder\vendor\git-for-windows\usr\share\vim\vim74;C:\dev\ztoolbox\cmder\;."/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vm.version" value="10.0.2+13"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="enforcer.skip" value="true"/>
+    <property name="java.class.version" value="54.0"/>
+  </properties>
+  <testcase name="Ajouter un sujet de formation" classname="Gérer les ressources de formations" time="3.824"/>
+  <testcase name="Ajouter un sujet de formation existant" classname="Gérer les ressources de formations" time="0.033"/>
+  <testcase name="Planifier une formation avec un code de formation inexistant" classname="Planifier une formation" time="0.037"/>
+  <testcase name="Planifier une formation pour une salle non disponible" classname="Planifier une formation" time="0.013"/>
+  <testcase name="Planifier une formation avec succès" classname="Planifier une formation" time="0.26"/>
+</testsuite>
